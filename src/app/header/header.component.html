@@ -1,8 +1,19 @@
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="nav-brand" routerLink="/home">SUSHI PAN <br>STUDIO</div>
+      <nav class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <div class="nav-elements">
+          <ul>
+            <li class="nav-element"><a routerLinkActive="activeNav" routerLink="/home">Home</a></li>
+            <li class="nav-element"><a routerLinkActive="activeNav" routerLink="/about">About</a></li>
+            <li class="nav-element"><a routerLinkActive="activeNav" routerLink="/portfolio">Portfolio</a></li>
+            <li class="nav-element"><a routerLinkActive="activeNav" routerLink="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
-</header>
+</div>

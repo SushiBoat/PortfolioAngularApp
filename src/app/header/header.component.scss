@@ -1,7 +1,76 @@
-header {
-  padding: 30px 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #24252a;
 }
 
+.col-sm-12 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
 
+.nav-brand,
+.nav-element,
+a,
+label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e3e9eb;
+  text-decoration: none;
+}
 
+label {
+  margin: 0 20px;
+  font-size: 26px;
+  display: none;
+}
 
+#toggle {
+  display: none;
+}
+
+.nav-brand {
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 28px;
+}
+
+.nav-elements {
+  list-style: none;
+}
+
+.nav-elements .nav-element {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-elements .nav-element a {
+  transition: all 0.2s ease 0s;
+}
+
+.nav-elements .nav-element a:hover {
+  color: #c91700;
+}
+
+.nav-elements .nav-element .activeNav {
+  color: #c91700;
+}
+
+/****************************************************
+**************** MEDIA QUERIES **********************
+****************************************************/
+@media screen and (max-width: 768px) {
+  .nav-elements .nav-element a:hover {
+    color: #e3e9eb;
+    background: #c91700;
+  }
+
+  .nav-elements .nav-element .activeNav {
+    color: #e3e9eb;
+    background: #c91700;
+  }
+}
